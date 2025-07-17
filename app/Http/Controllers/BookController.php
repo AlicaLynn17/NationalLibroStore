@@ -19,7 +19,7 @@ class BookController extends Controller
         $books = Book::where('title', 'like', "%{$query}%")
             ->orWhere('author', 'like', "%{$query}%")
             ->get();
-        return view('books.search', compact('books'));
+        return view('books.search', compact('books', 'query'));
     }
 
     public function show($id)

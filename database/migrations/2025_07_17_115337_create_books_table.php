@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('isbn')->nullable();
             $table->text('description')->nullable();
             $table->string('genre')->nullable();
-            $table->year('publication_year')->nullable();
+            $table->integer('publication_year')->nullable();
             $table->decimal('price', 8, 2)->nullable();
             $table->string('cover_image')->nullable();
             $table->timestamps();

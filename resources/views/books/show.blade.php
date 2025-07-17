@@ -5,16 +5,17 @@
 @section('content')
 <div style="display: grid; grid-template-columns: 300px 1fr; gap: 2rem;">
     <div>
-        <div class="book-cover" style="height: 400px;">
+        <a href="{{ route('home') }}" class="btn" style=" margin-bottom: 1rem;">Back to Home</a>
+        <div class="book-cover" style="height: 400px; margin-top: 1rem; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; width: 100%;">
             @if($book->cover_image)
-                <img src="{{ $book->cover_image }}" alt="{{ $book->title }}" style="max-width: 100%; max-height: 100%;">
+                <img src="{{ $book->cover_image }}" alt="{{ $book->title }}" style="width: 250px; height: auto; display: block;">
             @else
                 No Cover Available
             @endif
         </div>
     </div>
     
-    <div>
+    <div style="margin-top: 5rem;">
         <h1>{{ $book->title }}</h1>
         <h2 style="color: #666; margin-bottom: 1rem;">by {{ $book->author }}</h2>
         
@@ -43,7 +44,7 @@
             </div>
         @endif
         
-        <a href="{{ route('home') }}" class="btn" style="margin-top: 1rem;">Back to Home</a>
+        <!-- <a href="{{ route('home') }}" class="btn" style="margin-top: 1rem;">Back to Home</a> -->
     </div>
 </div>
 @endsection

@@ -4,31 +4,49 @@
 
 @section('content')
 <h1>Search Results</h1>
-@if($query)
-    <p>Results for: "<strong>{{ $query }}</strong>"</p>
-@endif
+<input type="text" id="live-search" placeholder="Type to search..." style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;">
 
-<div class="book-grid">
-    @forelse($books as $book)
-        <div class="book-card">
-            <div class="book-cover">
-                @if($book->cover_image)
-                    <img src="{{ $book->cover_image }}" alt="{{ $book->title }}" style="max-width: 100%; max-height: 100%;">
-                @else
-                    No Cover
-                @endif
-            </div>
-            <div class="book-title">{{ $book->title }}</div>
-            <div class="book-author">by {{ $book->author }}</div>
-            @if($book->price)
-                <div class="book-price">${{ number_format($book->price, 2) }}</div>
-            @endif
-            <a href="{{ route('books.show', $book->id) }}" class="btn" style="margin-top: 10px;">View Details</a>
-        </div>
-    @empty
-        <div style="grid-column: 1/-1; text-align: center; color: #666;">
-            <p>No books found matching your search.</p>
-        </div>
-    @endforelse
+<div class="book-grid" id="book-grid">
+    {{-- Initial book cards will be rendered by JS --}}
 </div>
+
+<script>
+    // Prepare book data for JS (pass all needed fields)
+    const books = @json($books);
+
+    function renderBooks(filteredBooks) {
+        const grid = document.getElementById('book-grid');
+        grid.innerHTML = '';
+        if (filteredBooks.length === 0) {
+            grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; color: #666;"><p>No books found matching your search.</p></div>';
+            return;
+        }
+        filteredBooks.forEach(book => {
+            grid.innerHTML += `
+                <div class="book-card">
+                    <div class="book-cover">
+                        ${book.cover_image ? `<img src="${book.cover_image}" alt="${book.title}" style="max-width: 100%; max-height: 100%;">` : 'No Cover'}
+                    </div>
+                    <div class="book-title">${book.title}</div>
+                    <div class="book-author">by ${book.author}</div>
+                    ${book.price ? `<div class="book-price">$${parseFloat(book.price).toFixed(2)}</div>` : ''}
+                    <a href="/books/${book.id}" class="btn" style="margin-top: 10px;">View Details</a>
+                </div>
+            `;
+        });
+    }
+
+    // Initial render
+    renderBooks(books);
+
+    document.getElementById('live-search').addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase();
+        const filtered = books.filter(book =>
+            book.title.toLowerCase().includes(query) ||
+            book.author.toLowerCase().includes(query) ||
+            (book.genre && book.genre.toLowerCase().includes(query))
+        );
+        renderBooks(filtered);
+    });
+</script>
 @endsection

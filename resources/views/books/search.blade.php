@@ -1,14 +1,14 @@
-@extends('layouts.app')
+@extends('layouts.searchbar')
 
 @section('title', 'Search Results')
 
 @section('content')
 
+<a href="{{ route('home') }}" class="btn-home" style="margin-top: 20px; width: max-content;">
+    <i class="fa fa-arrow-left" style="margin-right: 5px;"></i> Back to Home</a>
 <div class="book-grid" id="book-grid">
     {{-- Initial book cards will be rendered by JS --}}
 </div>
-
-<a href="{{ route('home') }}" class="btn" style="margin-top: 2rem; display: block; width: max-content;">Back to Home</a>
 
 <script>
     // Prepare book data for JS (pass all needed fields)

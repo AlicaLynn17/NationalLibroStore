@@ -5,7 +5,8 @@
 @section('content')
 <div style="display: grid; grid-template-columns: 300px 1fr; gap: 2rem;">
     <div>
-        <a href="{{ route('home') }}" class="btn" style=" margin-bottom: 1rem;">Back to Home</a>
+        <a href="{{ route('home') }}" class="btn" style=" margin-bottom: 1rem;">
+            Back to Home</a>
         <div class="book-cover" style="height: 400px; margin-top: 1rem; display: flex; align-items: center; justify-content: center; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; width: 100%;">
             @if($book->cover_image)
                 <img src="{{ $book->cover_image }}" alt="{{ $book->title }}" style="width: 250px; height: auto; display: block;">

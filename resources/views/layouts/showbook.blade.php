@@ -25,7 +25,9 @@
             padding: 0 20px;
         }
         
-        header { background: #2c3e50; color: white; padding: 1rem 0; }
+        header { 
+            background: #2c3e50; 
+        color: white; padding: 1rem 0; }
         .header-content { display: flex; justify-content: space-between; align-items: center; }
         .logo { font-size: 1.5rem; font-weight: bold; text-decoration: none; color: white; }
         

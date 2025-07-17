@@ -41,7 +41,7 @@
         
         main { padding: 2rem 0; min-height: 60vh; }
         
-        .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-top: 2rem; }
+        .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 2rem; }
         .book-card { 
             border: 1px solid #ddd; 
             border-radius: 8px; 

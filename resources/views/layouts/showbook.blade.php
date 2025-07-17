@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,12 +12,6 @@
             font-family: Arial, 
             sans-serif; line-height: 1.6; 
             color: #333; 
-            background-image: url('{{ asset('nlb1.png') }}'); 
-            background-size: cover; 
-            background-position: center; 
-            background-repeat: no-repeat; 
-            background-attachment: fixed; 
-            min-height: 100vh; 
         }
 
         .container { 

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.showbook')
 
 @section('title', $book->title)
 

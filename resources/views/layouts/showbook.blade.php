@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'National Libro Store')</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body { 
-            font-family: Arial, 
+
+        body {
+            font-family: 'Merriweather', Arial,
             sans-serif; line-height: 1.6; 
             color: #333;
             background-image: url('{{ asset('nlb1.png') }}');
@@ -41,7 +44,7 @@
             background: white; 
             color: white;
             padding: 0.5rem 0; 
-            background: rgba(255, 255, 255, 1); 
+            background: rgba(255, 255, 255, 0.97); 
         }
 
         .header-content { display: flex; justify-content: space-between; align-items: center; }
@@ -54,6 +57,7 @@
             max-width: 700px;
             justify-content: center;
             align-items: center;
+            
         }
 
         .search-input { 
@@ -62,6 +66,7 @@
             border-radius: 4px; 
             flex: 1;
             font-size: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.27);
         }
 
         .search-btn { 

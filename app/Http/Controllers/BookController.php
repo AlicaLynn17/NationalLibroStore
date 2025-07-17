@@ -10,7 +10,7 @@ class BookController extends Controller
     public function index()
     {
         $books = Book::all();
-        return view('books.index', compact('books'));
+        return view('welcome', compact('books'));
     }
 
     public function search(Request $request)

@@ -173,7 +173,7 @@
                 <a href="{{ route('home') }}" class="logo">
                     <img src="{{ asset('National Libro Store.png') }}" alt="National Libro Store" style="height: 150px; width: auto;">
                 </a>
-                <p style="color: black;">Discover your next favorite book from our extensive collection</p>
+                <p style="color: black;">Discover, search, and explore your next favorite book</p>
                 <form action="{{ route('books.search') }}" method="GET" class="search-form">
                     <input type="text" name="query" class="search-input" placeholder="Search for books...">
                     <button type="submit" class="search-btn">Search</button>
@@ -192,7 +192,7 @@
 
     <footer>
         <div class="container-footer">
-            <p>&copy; 2025 National Libro Store. All rights reserved.</p>
+            <p>&copy; 2025 National Libro Store. Made by Alica, Hadriel, and Krishna ♡ </p>
         </div>
     </footer>
 </body>

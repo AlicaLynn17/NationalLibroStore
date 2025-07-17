@@ -197,7 +197,7 @@
 
     <footer>
         <div class="container-footer">
-            <p>&copy; 2025 National Libro Store. All rights reserved.</p>
+            <p>&copy; 2025 National Libro Store. Made by Alica, Hadriel, and Krishna ♡ </p>
         </div>
     </footer>
 </body>

@@ -39,6 +39,10 @@
         <div class="container">
             <div class="header-content">
                 <a href="{{ route('home') }}" class="logo">National Libro Store</a>
+                <form action="{{ route('books.search') }}" method="GET" class="search-form" style="flex:1; margin-left:2rem;">
+                    <input type="text" name="query" class="search-input" placeholder="Search for books..." style="width:100%; font-size:1.2rem; padding:1rem;">
+                    <button type="submit" class="search-btn" style="font-size:1.2rem; padding:1rem 2rem;">Search</button>
+                </form>
             </div>
         </div>
     </header>

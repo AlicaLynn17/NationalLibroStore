@@ -34,8 +34,7 @@
         .container-books {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
-            margin-top: 20px;
+            padding: 10px 20px 40px 20px;
         }
         
         header { 
@@ -110,8 +109,8 @@
             transition: transform 0.2s; 
             background-color: white; 
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin-top: 30px;
-            margin-bottom: 30px;
+            /* margin-top: 30px;
+            margin-bottom: 30px; */
         }
         .book-card:hover { transform: translateY(-5px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
         .book-cover { 
@@ -130,7 +129,10 @@
             
         }
         .book-author { color: #666; margin-bottom: 10px; }
-        .book-price { color: #e74c3c; font-weight: bold; }
+        .book-price { 
+            color: #b76a00; 
+            font-weight: bold; 
+        }
         
         footer { 
             background: #8e2117ff; 

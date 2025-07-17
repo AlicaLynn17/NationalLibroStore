@@ -44,7 +44,7 @@
             background: white; 
             color: white;
             padding: 0.5rem 0; 
-            background: rgba(255, 255, 255, 0.97); 
+            background: #ede9d0; 
         }
 
         .header-content { display: flex; justify-content: space-between; align-items: center; }
@@ -115,7 +115,9 @@
             
         }
         .book-author { color: #666; margin-bottom: 10px; }
-        .book-price { color: #e74c3c; font-weight: bold; }
+        .book-price { 
+            color: #b76a00; 
+            font-weight: bold; }
         
         /* footer { 
             background: #34495e; 

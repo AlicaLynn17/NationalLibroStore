@@ -16,7 +16,7 @@
         </div>
     </div>
     
-    <div style="margin-top: 5rem; margin-bottom: 5rem;">
+    <div style="margin-top: 5rem; margin-bottom: 3rem;">
         <h1>{{ $book->title }}</h1>
         <h2 style="color: #666; margin-bottom: 1rem;">by {{ $book->author }}</h2>
         

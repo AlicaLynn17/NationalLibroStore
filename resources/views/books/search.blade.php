@@ -23,7 +23,7 @@
         }
         filteredBooks.forEach(book => {
             grid.innerHTML += `
-                <div class="book-card">
+                <div class="book-card" style="width: 250px; min-width: 250px;">
                     <div class="book-cover">
                         ${book.cover_image ? `<img src="${book.cover_image}" alt="${book.title}" style="max-width: 100%; max-height: 100%;">` : 'No Cover'}
                     </div>

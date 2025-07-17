@@ -6,8 +6,29 @@
     <title>@yield('title', 'National Libro Store')</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        body { 
+            font-family: Arial, 
+            sans-serif; line-height: 1.6; 
+            color: #333; 
+            background-image: url('{{ asset('nlb1.png') }}'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            min-height: 100vh; 
+        }
+
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 0 20px; }
+
+        .container-books {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
         
         header { background: #2c3e50; color: white; padding: 1rem 0; }
         .header-content { display: flex; justify-content: space-between; align-items: center; }
@@ -20,11 +41,32 @@
         
         main { padding: 2rem 0; min-height: 60vh; }
         
-        .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 2rem; }
-        .book-card { border: 1px solid #ddd; border-radius: 8px; padding: 15px; text-align: center; transition: transform 0.2s; }
+        .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-top: 2rem; }
+        .book-card { 
+            border: 1px solid #ddd; 
+            border-radius: 8px; 
+            padding: 15px; 
+            text-align: center; 
+            transition: transform 0.2s; 
+            background-color: white; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
         .book-card:hover { transform: translateY(-5px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .book-cover { width: 100%; height: 200px; background: #f8f9fa; border-radius: 4px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; color: #666; }
-        .book-title { font-weight: bold; margin-bottom: 5px; }
+        .book-cover { 
+            width: 100%; 
+            height: 200px; 
+            background: white; 
+            border-radius: 4px; 
+            margin-bottom: 10px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: 
+                center; color: #666; }
+        .book-title { 
+            font-weight: bold; 
+            margin-bottom: 5px;
+            
+        }
         .book-author { color: #666; margin-bottom: 10px; }
         .book-price { color: #e74c3c; font-weight: bold; }
         
@@ -48,7 +90,7 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="container-books">
             @yield('content')
         </div>
     </main>

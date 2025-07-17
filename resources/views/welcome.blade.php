@@ -3,9 +3,10 @@
 @section('title', 'Welcome to National Libro Store')
 
 @section('content')
+
 <div style="text-align: center; margin-bottom: 2rem;">
-    <h1>Welcome to National Libro Store</h1>
-    <p>Discover your next favorite book from our extensive collection</p>
+    <h1 style="color: white;">Welcome to National Libro Store</h1>
+    <p style="color: white;">Discover your next favorite book from our extensive collection</p>
 </div>
 
 <div class="book-grid">

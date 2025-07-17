@@ -3,8 +3,6 @@
 @section('title', 'Search Results')
 
 @section('content')
-<h1>Search Results</h1>
-<input type="text" id="live-search" placeholder="Type to search..." style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;">
 
 <div class="book-grid" id="book-grid">
     {{-- Initial book cards will be rendered by JS --}}

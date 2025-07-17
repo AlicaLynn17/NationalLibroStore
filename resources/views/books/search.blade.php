@@ -8,6 +8,8 @@
     {{-- Initial book cards will be rendered by JS --}}
 </div>
 
+<a href="{{ route('home') }}" class="btn" style="margin-top: 2rem; display: block; width: max-content;">Back to Home</a>
+
 <script>
     // Prepare book data for JS (pass all needed fields)
     const books = @json($books);

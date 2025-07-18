@@ -177,7 +177,7 @@
         <div class="container">
             <div class="header-content">
                 <a href="{{ route('home') }}" class="logo">
-                    <img src="{{ asset('National Libro Store.png') }}" alt="National Libro Store" style="height: 100px; width: auto;">
+                    <img src="{{ asset('National Libro Store.png') }}" alt="National Libro Store" style="height: 100px; width: auto; margin-right: 30px;">
                 </a>
                 <form action="{{ route('books.search') }}" method="GET" class="search-form">
                     <input type="text" name="query" class="search-input" placeholder="Search for books...">

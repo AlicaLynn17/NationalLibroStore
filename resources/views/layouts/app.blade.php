@@ -88,7 +88,7 @@
             font-size: 1rem;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.27);
         }
-        .search-btn:hover { background: #2980b9; }
+        .search-btn:hover { background: #ae2f23ff; }
         
         main { 
             min-height: 60vh; 
@@ -173,7 +173,7 @@
                 <a href="{{ route('home') }}" class="logo">
                     <img src="{{ asset('National Libro Store.png') }}" alt="National Libro Store" style="height: 150px; width: auto;">
                 </a>
-                <p style="color: black;">Discover, search, and explore your next favorite book</p>
+                <p style="color: black;">Discover, search, and explore your next favorite book.</p>
                 <form action="{{ route('books.search') }}" method="GET" class="search-form">
                     <input type="text" name="query" class="search-input" placeholder="Search for books...">
                     <button type="submit" class="search-btn">Search</button>

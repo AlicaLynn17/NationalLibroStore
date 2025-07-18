@@ -3,7 +3,7 @@
 @section('title', $book->title)
 
 @section('content')
-<div style="display: grid; grid-template-columns: 300px 1fr; gap: 2rem;">
+<div style="display: grid; grid-template-columns: 300px 1fr; gap: 2rem; align-items: start;">
     <div>
         <a href="{{ route('home') }}" class="btn-back" style=" margin-bottom: 1rem; margin-top: 30px; width: max-content;">
             <i class="fa fa-arrow-left" style="margin-right: 5px;"></i> Back to Home</a>
@@ -16,7 +16,7 @@
         </div>
     </div>
     
-    <div style="margin-top: 5rem; margin-bottom: 3rem;">
+    <div style="margin-top: 6rem; margin-bottom: 3rem;">
         <h1>{{ $book->title }}</h1>
         <h2 style="color: #666; margin-bottom: 1rem;">by {{ $book->author }}</h2>
         

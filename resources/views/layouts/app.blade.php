@@ -123,6 +123,7 @@
             align-items: center; 
             justify-content: 
                 center; color: #666; }
+        
         .book-title { 
             font-weight: bold; 
             margin-bottom: 5px;

@@ -109,11 +109,12 @@
             align-items: center; 
             justify-content: 
                 center; color: #666; }
+
         .book-title { 
             font-weight: bold; 
             margin-bottom: 5px;
-            
         }
+
         .book-author { color: #666; margin-bottom: 10px; }
         .book-price { 
             color: #b76a00; 
@@ -126,6 +127,13 @@
             padding: 2rem 0;
             flex-shrink: 0;
         } */
+        
+        .book-details-grid {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+             gap: 2rem;
+             align-items: start;
+        }
         
         .btn 
         { display: inline-block; 

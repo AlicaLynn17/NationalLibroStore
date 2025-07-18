@@ -21,7 +21,7 @@
         <h2 style="color: #666; margin-bottom: 1rem;">by {{ $book->author }}</h2>
         
         @if($book->price)
-            <div style="font-size: 1.5rem; color: #e74c3c; font-weight: bold; margin-bottom: 1rem;">
+            <div style="font-size: 1.5rem; color: #2f861f; font-weight: bold; margin-bottom: 1rem;">
                 ${{ number_format($book->price, 2) }}
             </div>
         @endif

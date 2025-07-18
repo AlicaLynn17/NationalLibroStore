@@ -130,7 +130,7 @@
         }
         .book-author { color: #666; margin-bottom: 10px; }
         .book-price { 
-            color: #b76a00; 
+            color: #2f861f; 
             font-weight: bold; 
         }
         

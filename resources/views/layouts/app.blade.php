@@ -150,6 +150,15 @@
           border-radius: 4px; 
         }
 
+        .btn-detail
+        { display: inline-block; 
+          padding: 8px 16px; 
+          background: #ba2d20ff; 
+          color: white; 
+          text-decoration: none; 
+          border-radius: 4px; 
+        }
+
         .btn:hover 
         { background: #c12f22ff; 
         }

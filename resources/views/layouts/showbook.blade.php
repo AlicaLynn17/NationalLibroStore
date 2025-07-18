@@ -83,7 +83,7 @@
         .search-btn:hover { background: #821e15ff; }
         
         main { 
-            padding: 4rem 0; 
+            padding: 3rem 0; 
             min-height: 60vh; 
         }
         

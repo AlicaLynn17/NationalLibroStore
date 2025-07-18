@@ -24,7 +24,7 @@
             @if($book->price)
                 <div class="book-price">${{ number_format($book->price, 2) }}</div>
             @endif
-            <a href="{{ route('books.show', $book->id) }}" class="btn" style="margin-top: 10px;">View Details</a>
+            <a href="{{ route('books.show', $book->id) }}" class="btn-detail" style="margin-top: 10px;">View Details</a>
         </div>
     @empty
         <div style="grid-column: 1/-1; text-align: center; color: #666;">

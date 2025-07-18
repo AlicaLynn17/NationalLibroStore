@@ -6,6 +6,8 @@
 
 <a href="{{ route('home') }}" class="btn-home" style="margin-top: 20px; width: max-content;">
     <i class="fa fa-arrow-left" style="margin-right: 5px;"></i> Back to Home</a>
+
+<div id="no-books-message"></div>
 <div class="book-grid" id="book-grid">
     {{-- Initial book cards will be rendered by JS --}}
 </div>
@@ -16,9 +18,15 @@
 
     function renderBooks(filteredBooks) {
         const grid = document.getElementById('book-grid');
+        const message = document.getElementById('no-books-message');
         grid.innerHTML = '';
+        message.innerHTML = '';
         if (filteredBooks.length === 0) {
-            grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; color: #666;"><p>No books found matching your search.</p></div>';
+            message.innerHTML = `
+                <div class="book-none" style="background-color: #ede9d0; width: 100%; margin: 2rem auto 15rem auto; border-radius: 8px; padding: 2rem 1rem; text-align: center; display: flex; justify-content: center;">
+                    <p style="font-size: 1.2rem; color: #000; font-weight: bold; margin: 0;">No books found matching your search.</p>
+                </div>
+            `;
             return;
         }
         filteredBooks.forEach(book => {

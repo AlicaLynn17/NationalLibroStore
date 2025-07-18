@@ -88,7 +88,7 @@
             font-size: 1rem;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.27);
         }
-        .search-btn:hover { background: #2980b9; }
+        .search-btn:hover { background: #a92a1eff;}
         
         main { 
             min-height: 60vh; 
@@ -99,6 +99,15 @@
             grid-template-columns: 
             repeat(auto-fill, minmax(200px, 1fr)); 
             gap: 20px; 
+        }
+
+        .book-grid > .book-none > p {
+            margin-top: 2rem;      /* space above the message */
+            margin-bottom: 2rem;   /* space below the message */
+            font-size: 1.2rem;
+            color: #444;
+            font-weight: bold;
+            text-align: center;
         }
 
         .book-card { 
@@ -192,6 +201,8 @@
             @yield('content')
         </div>
         </div>
+
+        
     </main>
 
     <footer>

@@ -161,7 +161,7 @@
         }
 
         .container-back {
-            background-color: white;
+            background-color: #ede9d0;
             margin: 60px auto 0 auto;
         }
 

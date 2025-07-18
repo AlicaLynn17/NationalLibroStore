@@ -68,7 +68,6 @@
             max-width: 600px;
             justify-content: center;
             align-items: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         .search-input { 
             padding: 8px 16px; 

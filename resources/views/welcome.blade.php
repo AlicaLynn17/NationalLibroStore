@@ -3,9 +3,10 @@
 @section('title', 'Welcome to National Libro Store')
 
 @section('content')
+
 <div style="text-align: center; margin-bottom: 2rem;">
-    <h1>Welcome to National Libro Store</h1>
-    <p>Discover your next favorite book from our extensive collection</p>
+    <!-- <h1 style="color: white;">Welcome to National Libro Store</h1>
+    <p style="color: white;">Discover your next favorite book from our extensive collection</p> -->
 </div>
 
 <div class="book-grid">
@@ -23,7 +24,7 @@
             @if($book->price)
                 <div class="book-price">${{ number_format($book->price, 2) }}</div>
             @endif
-            <a href="{{ route('books.show', $book->id) }}" class="btn" style="margin-top: 10px;">View Details</a>
+            <a href="{{ route('books.show', $book->id) }}" class="btn-detail" style="margin-top: 10px;">View Details</a>
         </div>
     @empty
         <div style="grid-column: 1/-1; text-align: center; color: #666;">
